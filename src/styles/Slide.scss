@@ -1,0 +1,39 @@
+.slide {
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../public/assets/slide.jpg");
+  background-position: center center; 
+  background-size: cover; /* Utilisation de cover pour ajuster l'image à la taille du conteneur */
+}
+
+/* Règles de style pour les titres */
+.slide h1 {
+  padding: 20px;
+  font-size: 60px;
+  text-align: center;
+  color: #e0da16;
+  background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide h2 {
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: #d5e621;
+  background-image: linear-gradient(to right, #f6c7d1, #fbe7f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.slide h2 span {
+  font-weight: bold; /* Mise en gras */
+  color: hsl(17, 94%, 50%); /* Couleur différente pour le span */
+}
+
