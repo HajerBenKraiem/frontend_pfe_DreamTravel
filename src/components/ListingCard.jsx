@@ -113,7 +113,7 @@ const ListingCard = ({
         <>
           <p>{type}</p>
           <p>
-            <span>Dt{price}</span> per night
+            <span>${price}</span> per night
           </p>
         </>
       ) : (
@@ -122,7 +122,7 @@ const ListingCard = ({
             {startDate} - {endDate}
           </p>
           <p>
-            <span>Dt{totalPrice}</span> total
+            <span>${totalPrice}</span> total
           </p>
         </>
       )}
