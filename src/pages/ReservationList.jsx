@@ -67,6 +67,13 @@ const ReservationList = () => {
           )
         )}
       </div>
+      {/* <button onClick={()=>{dispatch(clearCart())}}> 
+              { <Link to={"/pay/" + cart.cartTotalAmount} 
+style={{"color":"yellow"}}> 
+                 Validate and Pay 
+                 </Link>  
+               } 
+                  </button>   */}
       <Footer />
     </>
   );
