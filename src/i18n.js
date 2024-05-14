@@ -11,13 +11,25 @@ i18n
           // Ajoutez vos traductions en anglais ici
           welcome: 'Welcome',
           // Autres traductions
+          discover_world: 'Let\'s discover the world!',
+          book_now: 'Book now and enjoy 15% off !! before 01/10/2024',
         }
+
       },
       fr: {
         translation: {
           // Ajoutez vos traductions en français ici
           welcome: 'Bienvenue',
           // Autres traductions
+          discover_world: 'Découvrons le monde!',
+          book_now: 'Réservez maintenant et profitez de 15% de réduction !! avant le 01/10/2024',
+        }
+      },
+      ar: {
+        translation: {
+          discover_world: 'لنكتشف العالم!',
+          book_now: 'احجز الآن واستمتع بخصم 15% !! قبل 01/10/2024',
+          // Ajoutez d'autres traductions ici
         }
       },
       // Ajoutez des ressources pour d'autres langues si nécessaire
