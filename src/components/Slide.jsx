@@ -12,6 +12,7 @@ const Slide = () => {
   const [location, setLocation] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+  const [search, setSearch] = useState("");
 
   // Fonction de gestion de la soumission du formulaire
   const handleSearch = () => {
@@ -31,7 +32,8 @@ const Slide = () => {
         {/* <p>Trouvez un logement à moindre coût et parfaitement adapté à tout type de séjour sur DreamTravel et payez en toute sécurité.</p> */}
         <div className="inputContainer">
           <span>Where</span>
-          <input type="text" placeholder="where  to?" onChange={(e) => setLocation(e.target.value)} />
+          <input type="text" placeholder="where  to?" onChange={(e) => setLocation(e.target.value)}
+           />
         </div>
         <div className="inputContainer">
           {/* <span>Quand</span> */}
@@ -53,7 +55,8 @@ const Slide = () => {
             {/* Ajoutez autant d'options que nécessaire */}
           </select>
         </div>
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch}  value={search}
+         >Search</button>
       </div>
     </div>
   );
