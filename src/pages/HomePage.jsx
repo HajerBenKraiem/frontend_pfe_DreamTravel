@@ -16,7 +16,7 @@ const HomePage = () => {
      
       <Categories />
       <Listings />
-      <MapComponent />
+      {/* <MapComponent /> */}
       <Footer />
     </>
   )

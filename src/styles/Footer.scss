@@ -32,6 +32,7 @@ $gray: #808080;
   align-items: center;
   gap: 50px;
   padding: 10px 70px;
+  background-color:antiquewhite;
 
   // Appliquer le padding spécifique pour les grands écrans
   @include lg {
