@@ -16,6 +16,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n'; // Importez le fichier de configuration i18n
 
 import StripePayment from './components/StripePayment';
+import About from "./pages/About";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
           <Route path="/:userId/reservations" element={<ReservationList />} />
           {/* <Route path="/languageCard" element={<LanguageCard />} /> */}
 
+          
           <Route path='/pay/:total' element={<StripePayment/>}/> 
+          <Route path='/about' element={<About/>}/> 
         </Routes>
       </Router>
     </I18nextProvider>

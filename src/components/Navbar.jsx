@@ -11,6 +11,7 @@ import { FaPlane } from "react-icons/fa";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { useTranslation } from 'react-i18next';
 import { FaDollarSign } from 'react-icons/fa';
+import { FaHome, FaSuitcase, FaTools } from 'react-icons/fa';
 
 const Navbar = () => {
   const [dropdownMenu, setDropdownMenu] = useState(false);
@@ -34,32 +35,7 @@ const Navbar = () => {
         <img src="/assets/logo.png" alt="logo" />
       </a>
 
-      <div className="navbar_flight">
-      <a href="/" className="flight">
-            < FaPlane /> Book Flight
-          </a>
-      </div>
-
-         {/* Affichage de la traduction de la clé "welcome" */}
-      {/* <h1>{t('welcome')}</h1> */}
-
-      <div className="navbar_search">
-        <input
-          type="text"
-          placeholder="Search ..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-
-        <IconButton
-          disabled={search === ""}
-          onClick={() => navigate(`/properties/search/${search}`)}
-        >
-          <Search sx={{ color: variables.pinkred }} />
-        </IconButton>
-      </div>
-
-
+    
       <div className="navbar_language">
         <FaGlobe /> 
         <select className=" navbar_section"
@@ -83,6 +59,50 @@ const Navbar = () => {
           <option value="usd">USD</option>
         </select>
       </div>
+         {/* Affichage de la traduction de la clé "welcome" */}
+      {/* <h1>{t('welcome')}</h1> */}
+
+      <div className="navbar_search">
+        <input
+          type="text"
+          placeholder="Search ..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+
+        <IconButton
+          disabled={search === ""}
+          onClick={() => navigate(`/properties/search/${search}`)}
+        >
+          <Search sx={{ color: variables.pinkred }} />
+        </IconButton>
+      </div>
+
+
+    
+
+      <div className="navbar_right">
+      <a href="/" className="host">
+      <FaHome size={30} /> Home
+          </a>
+      </div>
+      <div className="navbar_right">
+      <a href="/about " className="host">
+      <FaSuitcase size={30} /> About
+          </a>
+      </div>
+      {/* <div className="navbar_right">
+      <a href="/" className="host">
+      <FaTools size={30} />ervice
+          </a>
+      </div> */}
+      <div className="navbar_right">
+      <a href="/" className="host">
+            < FaPlane size={30} /> Book Flight
+          </a>
+      </div>
+
+
 
       <div className="navbar_right">
         {user ? (
